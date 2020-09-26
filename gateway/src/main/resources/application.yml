@@ -1,0 +1,57 @@
+spring:
+  application:
+    name: gateway
+server:
+  port: 8081
+eureka:
+  instance:
+    prefer-ip-address: true
+  client:
+    service-url:
+      defaultZone: http://localhost:9000/eureka/
+    fetch-registry: true
+    register-with-eureka: true
+
+
+      #  servlet:
+      #    context-path: /
+      #      zuul:
+      #        prefix: /api
+      #        routes:
+      #          fileuploadserver:
+      #            path: /fileuploadserver/**
+      #            serviceid: fileuploadserver
+      #            stripPrefix: true
+
+
+
+      #zuul:
+      #  routes:
+      #    products:
+      #    path: /api/**
+      #    url: http://localhost:7676/
+
+
+      #    zuul:
+      #      prefix: /api
+      #      routes:
+      #        clientecloud:
+      #          path: /clientecloud/**
+      #          serviceId: clientecloud
+      #          stripPrefix: true
+      #        esocial:
+      #          path: /esocial/**
+      #          serviceId: esocial
+      #          stripPrefix: true
+      #        fileserver:
+      #          path: /fileserver/**
+      #          serviceId: fileserver
+      #          stripPrefix: true
+      #        docindex:
+      #          path: /docindex/**
+      #          serviceId: docindex
+      #          stripPrefix: true
+      #        portal:
+      #          path: /portal/**
+      #          serviceId: portal
+    #          stripPrefix: true
