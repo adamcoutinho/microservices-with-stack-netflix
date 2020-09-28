@@ -1,6 +1,15 @@
 spring:
   application:
     name: fileuploadserver
+  servlet:
+    multipart:
+      enabled: true
+      file-size-threshold: 2KB
+      max-file-size: 220KB
+      max-request-size: 225KB
+file:
+     upload-dir: /store-ecommerce
+
 server:
   port: 8082
 
@@ -12,3 +21,4 @@ eureka:
       defaultZone: http://localhost:9000/eureka/
     fetch-registry: true
     register-with-eureka: true
+
