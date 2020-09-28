@@ -7,7 +7,7 @@ import org.springframework.web.multipart.MultipartFile;
 @RequestMapping("/fileuploadserver")
 public class FileUploadServerEndPoint {
 
-    @GetMapping("/init-service-fileupload")
+    @GetMapping("/test")
     public String start() {
         return "<h1>FileUploadServerEndPoint</h1>";
     }

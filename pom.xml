@@ -18,7 +18,6 @@
         <module>discovery</module>
         <module>gateway</module>
         <module>fileupload-server</module>
-        <module>zuul-proxy</module>
     </modules>
 
     <properties>
